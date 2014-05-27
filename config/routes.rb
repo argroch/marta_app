@@ -1,7 +1,10 @@
 MartaApp::Application.routes.draw do
+  resources :selections
+
   get "welcome/home"
-  get "welcome/radioselect"
-  post "welcome/yourbuses"
+  get "welcome/radioselect" => "welcome#radioselect"
+  get "welcome/dropdownselect" => "welcome#dropdownselect"
+  post "welcome/yourbuses" => "welcome#yourbuses"
 
   root "welcome#home"
   
