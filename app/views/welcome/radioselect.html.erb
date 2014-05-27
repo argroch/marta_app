@@ -1,2 +1,16 @@
-<h1>Welcome#radioselect</h1>
-<p>Find me in app/views/welcome/radioselect.html.erb</p>
+<h2>Choose a Station!</h2>
+
+<div>
+	<p>
+		Radio Buttons:
+	</p>
+	<%= form_tag("/welcome/yourbuses", method: "post") do %>
+		<%= label_tag(:station, "Station: " ) %>
+		<br />
+		<% @stations.each do |s| %>
+			<%= radio_button_tag(:station, s) %> <%= s %><br />
+		<% end %>
+
+		<%= submit_tag("Check for buses!") %>
+	<% end %>
+</div>
