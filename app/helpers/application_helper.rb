@@ -4,7 +4,7 @@ module ApplicationHelper
 		@message = ""
 		@buses = {}
 		results.each do |result|
-			if result["TIMEPOINT"].include? @station
+			if result["TIMEPOINT"].include? station
 				@buses[result["ROUTE"]] = result["VEHICLE"]
 			end
 		end

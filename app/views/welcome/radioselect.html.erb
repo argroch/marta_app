@@ -4,7 +4,7 @@
 	<p>
 		Radio Buttons:
 	</p>
-	<%= form_tag("/welcome/yourbuses", method: "post") do %>
+	<%= form_tag("/welcome/yourbuses", method: "get") do %>
 		<%= label_tag(:station, "Station: " ) %>
 		<br />
 		<% @stations.each do |s| %>

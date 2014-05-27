@@ -10,10 +10,11 @@
       </ul>
     </div>
   <% end %>
-
+  <!-- 
+    We're just gonna have one field: Select a station name! This page serves the same purpose as 'welcome/radioselect'.
+  -->
   <div class="field">
-    <%= f.label :station_name %><br>
-    <%= f.text_field :station_name %>
+    <%= f.select :station_name, Station.all.collect {|station| [ station.name ] } %>
   </div>
   <div class="actions">
     <%= f.submit %>

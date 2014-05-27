@@ -28,7 +28,8 @@ class SelectionsController < ApplicationController
 
     respond_to do |format|
       if @selection.save
-        format.html { redirect_to @selection, notice: 'Selection was successfully created.' }
+        #check it out: I redirected the path below! We use the 'create' action to choose the station, and then go to this custom page...I suppose you could just as easily redesigned the Selection 'show' page. Shrug...next time!
+        format.html { redirect_to busesarriving_path, notice: 'Selection was successfully created.' }
         format.json { render action: 'show', status: :created, location: @selection }
       else
         format.html { render action: 'new' }

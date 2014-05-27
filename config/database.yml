@@ -22,7 +22,7 @@ production:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: [PROJECT]_production
+  database: marta_app_production
   pool: 5
   username:
   password:
