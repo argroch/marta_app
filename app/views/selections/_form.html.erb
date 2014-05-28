@@ -17,6 +17,6 @@
     <%= f.select :station_name, Station.all.collect {|station| [ station.name ] } %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Check for buses!', :class=>'btn submit-button' %>
   </div>
 <% end %>

@@ -16,6 +16,37 @@
 	background-color: #01DFD7;
 }
 
-.nav-color a{
-	color:white;
+.nav a{
+	color:#FFC61E;
 }
+
+.blue-bg{
+	background-color: #008CCC;
+}
+.blue-text{
+	color: #008CCC;
+}
+
+.yellow-bg{
+	background-color: #FFC61E;
+}
+.yellow-text{
+	color: #FFC61E;
+}
+
+.orange-bg{
+	background-color: #F77F00;
+}
+.orange-text{
+	color: #F77F00;
+}
+
+.submit-button{
+	background-color: #008CCC;
+	color: #FFC61E;
+	margin:5px;
+}
+
+
+
+

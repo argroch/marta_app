@@ -1,9 +1,6 @@
-<h2>Choose a Station!</h2>
+<h2 class="orange-text">Choose a Station!</h2>
 
 <div>
-	<p>
-		Radio Buttons:
-	</p>
 	<%= form_tag("/welcome/yourbuses", method: "get") do %>
 		<%= label_tag(:station, "Station: " ) %>
 		<br />
@@ -11,6 +8,6 @@
 			<%= radio_button_tag(:station, s) %> <%= s %><br />
 		<% end %>
 
-		<%= submit_tag("Check for buses!") %>
+		<%= submit_tag 'Check for buses!', :class=>'btn submit-button' %>
 	<% end %>
 </div>
