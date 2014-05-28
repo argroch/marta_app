@@ -44,9 +44,27 @@
 .submit-button{
 	background-color: #008CCC;
 	color: #FFC61E;
-	margin:5px;
+	margin:15px;
 }
 
+.scroll {
+    position:relative;
+    top:0;
+    left:0;
+}
 
+.neg-twenty-margin{
+	margin-bottom: -20px; 	
+}
 
+.choose-a-station {
+	background-color: white;
+}
 
+.radios {
+	padding:15px;
+}
+
+.dropdown {
+	margin:10px;
+}

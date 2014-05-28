@@ -1,13 +1,15 @@
-<h2 class="orange-text">Choose a Station!</h2>
+<div class="scroll choose-a-station">
+	<h2 class="orange-text">Choose a Station!</h2>
+	<p><b>Which MARTA Station Are You At?</b></p>
+</div>
 
-<div>
+<div class="radios">
 	<%= form_tag("/welcome/yourbuses", method: "get") do %>
-		<%= label_tag(:station, "Station: " ) %>
+		<%= label_tag(:station, " " ) %>
 		<br />
 		<% @stations.each do |s| %>
 			<%= radio_button_tag(:station, s) %> <%= s %><br />
 		<% end %>
-
 		<%= submit_tag 'Check for buses!', :class=>'btn submit-button' %>
 	<% end %>
 </div>
