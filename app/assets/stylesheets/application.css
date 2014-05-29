@@ -58,7 +58,10 @@
 }
 
 .choose-a-station {
-	background-color: white;
+	background-color: #008CCC;
+	color: black;
+	text-shadow: 0 0;
+	padding-left:2px;
 }
 
 .radios {
@@ -67,4 +70,14 @@
 
 .dropdown {
 	margin:10px;
+}
+
+.homepage {
+	background: url('marta2-opaque.jpg') no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	text-shadow: 0.5px 0.5px #2E2E2E;
 }
