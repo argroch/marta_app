@@ -1,12 +1,14 @@
 class WelcomeController < ApplicationController
   
-  include ApplicationHelper
   #we're going to be using a method we created in the application_helper.rb. Go take a look!
-
+  include ApplicationHelper
+  
   #next two lines required to access the API:
   require 'open-uri'
   require 'json'
 
+  #welcome/home
+  #just a home/landing-page
   def home
   end
 
